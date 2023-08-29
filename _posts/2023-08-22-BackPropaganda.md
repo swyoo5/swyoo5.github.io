@@ -59,7 +59,7 @@ $\frac{dz}{dx}, \frac{dz}{dy}$ 모두 1이 된다. 그래서 입력값이 그대
 
 ## 곱셈노드
 
-$\z = xy$를 생각해보면 
+$z = xy$를 생각해보면 
 $$
 \frac{dz}{dx} = y\\
 \frac{dz}{dy} = x
