@@ -85,3 +85,25 @@ sidebar:
   ```
 
   apply_gradients 함수는 실제로 변수를 업데이트하는 작업을 수행한다.
+
+* Sequential()
+
+  Sequential()은 텐서플로우에서 신경망 모델을 구축하기 위한 모듈 중 하나이다. Sequential은 순차적으로 레이어를 쌓아 간단한 모델을 만들 때 사용된다.
+
+  ```python
+  from tensorflow.keras.models import Sequential
+  from tensorflow.keras.layers import Dense
+  
+  model = Sequential()
+  
+  # Dense : 완전연결 layer
+  model.add(Dense(64, activation = "relu", input_dim = (100,)))
+  model.add(Dropout(0.5))
+  model.add(Dense(10, activation = "softmax"))
+  
+  model.compile(optimizer = "adam",
+                loss = "categorical_crossentropy",
+                metrics = ["accuracy"])
+  ```
+
+  
