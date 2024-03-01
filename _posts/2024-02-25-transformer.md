@@ -163,12 +163,16 @@ $$
    $$
    \hat{x}_{i,k} = {{x_{i,k}}-\mu_{i}\over{\sqrt{\sigma^{2}+\epsilon}}}
    $$
+   
+
    언제나 그렇듯 분모의 $\epsilon$은 0이 되는것을 방지하는 역할을 한다.
 
    그 다음, $\gamma$와 $\beta$를 이용해 최종 결과를 만든다.
    $$
    ln_{i} = \gamma\hat{x}_{i}+\beta=LayerNorm(x_{i})
    $$
+   
+
    여기서 $\gamma$와 $\beta$의 초기값은 각각 1벡터와 0벡터이다.
 
    
