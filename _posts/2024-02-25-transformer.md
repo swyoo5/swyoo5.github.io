@@ -66,7 +66,42 @@ pos와 i는 임베딩 행렬에서 행과 열을 의미한다. 즉, pos는 입�
 
 우선 어텐션은 쉽게 말하자면 특정 작업을 수행하기 위해 입력된 모든 정보를 동등하게 참고하는 것이 아닌 작업과 연관성이 높은 특정 정보에만 집중(Attention)하는 기법이다. 
 
-트랜스포머에서 사용되는 어텐션의 종류는 세가지이다.
+![image-20240301165039999](/images/2024-02-25-transformer/image-20240301165039999.png)
+
+여러 블로그들을 살펴보면 위의 그림을 흔하게 볼수 있는데, 이는 어텐션의 구조를 단순화시킨 그림이라고 볼 수 있다. 이를 수식으로 나타내면
+$$
+Attention(Q,\ K,\ V) = Attention\ Value
+$$
+이고 어텐션을 간단하게 풀어서 설명하면
+
+* Query(궁금한 정보의 시점 t에서의 hidden state)와 Key(입력정보의 hidden state)의 유사도를 구한다.
+* 방금 구한 유사도를 Value에 반영한다.
+* 유사도를 반영한 Value를 모두 더해서 리턴한다(Attention Value).
+
+처음 어텐션을 공부할 때, 어텐션은 이해가 갔지만 그림과 무슨 관련이 있는지, Q, K, V가 도대체 무엇인지 알 수가 없었다. 뒤에서 내가 이해한대로 천천히 설명해보겠다.
+
+### Query, Key, Value
+
+그렇다면 Attention의 Query, Key, Value란 무엇일까?
+
+![image-20240301165929496](/images/2024-02-25-transformer/image-20240301165929496.png)
+
+위의 그림(기계번역)을 예로 들어서 설명을 하겠다.
+
+* Query
+  * 유추해야 하는 시점의 디코더의 hidden state
+  * 쉽게 말해서 내가 지금 궁금한 정보의 시점에서 나온 hidden state라고 할 수 있겠다.
+  * 그림에서 디코더의 3번째 시점에서 나온 hidden state
+* Key
+  * 인코더의 input에 대해서 각 셀에서 출력된 hidden state
+  * 소스 문장에 대 hidden state, 입력에 관한 정보라고 볼 수 있겠다.
+  * 그림에서 인코더 부분에서 입력이 LSTM에서 나온 hidden state(초록색 동그라미)
+* Value
+  * Query와 Key의 유사도를 반영한 정보이므로 Softmax함수의 출력으로 볼 수 있겠다.
+
+### Transformer Attention
+
+트랜스포머에서 사용되는 어텐션의 종류는 세가지이다. Self-Attention은 말그대로 self, 즉 Q, K, V의 출처가 모두 동일한  어텐션을 의미한다(벡터의 값이 같은것이 아님).
 
 * Encoder self-attention
 
@@ -80,16 +115,33 @@ pos와 i는 임베딩 행렬에서 행과 열을 의미한다. 즉, pos는 입�
 
   ![image-20240227225417439](/images/2024-02-25-transformer/image-20240227225417439.png)
 
-### Query, Key, Value
-
-그렇다면 Attention의 Query, Key, Value란 무엇일까?
-
-* Query
-  * 
-* Key
-* Value
-
 ## Encoder
 
+* Q, K, V 행렬 얻기
+
+  ![image-20240301170847028](/images/2024-02-25-transformer/image-20240301170847028.png)
+
+  우선 소스 문장의 단어들을 행렬로 만들어 병렬연산을 한다. 소스 단어의 행렬을 각각 세개의 다른 학습한 가중치들로 이루어진 행렬을 곱해 Q, K, V벡터로 변환을 한다(차원 줄이기).
+
+  소스 단어 벡터의 차원은 1 x $\d_{model}$, 세개의 가중치 행렬 $\W$의 차원은 $\d_{model}$ x $\d_{model} / numheads$이다.
+
+* Scaled dot product
+
+  ![image-20240301172054325](/images/2024-02-25-transformer/image-20240301172054325.png)
+
+  Q와 K 행렬을 내적하면 각 문장의 유사도 행렬을 구할 수 있다. 여기에 스케일링 상수($\sqrt{d_{k}}$)를 나눠준 뒤, 소프트맥스 함수를 취한 뒤 V행렬을 곱한다. 이렇게 하면 각 단어의 어텐션 값으로 이루어진 어텐션 값 행렬이 나오게 된다.
+
+![image-20240301172440829](/images/2024-02-25-transformer/image-20240301172440829.png)
+
+### Multi-head Self-Attention
+
+### Add & Norm
+
+### Position-wise FFNN
+
 ## Decoder
+
+### Masked Multi-head Self-Attention
+
+### Multi-head Attention
 
