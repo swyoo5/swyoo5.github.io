@@ -23,7 +23,7 @@ sidebar:
 
 
 
-## Transformer의 전체적인 구조
+## Transformer의 개요
 
 ![트랜스포머1](../images/2024-02-25-transformer/트랜스포머1.jpg)
 
