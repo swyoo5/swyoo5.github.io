@@ -50,12 +50,6 @@ pipeline 라이브러리로 수행가능한 작업은 다음과 같다.
 
 
 
-# 파이프라인 활용하기
-
-[Chapter1 코드](https://github.com/swyoo5/HuggingFace/blob/main/NLPCourse/Chapter1.ipynb)
-
-
-
 # 트랜스포머의 특성
 
 * 언어모델
@@ -87,3 +81,9 @@ pipeline 라이브러리로 수행가능한 작업은 다음과 같다.
 * 인코더 : **입력에 대한 이해**를 요구하는 작업에 적합(문장 분류, 개체명 인식, 단어분류)
 * 디코더 : **출력 생성**에 적합(텍스트 생성)
 * 인코더-디코더(or seq2seq) : 번역, 요약과 같이 **입력에 대한 이해**와 **출력** 모두를 수행해야 하는 작업에 적합함
+
+
+
+# 코드 첨부
+
+[Chapter1 코드](https://github.com/swyoo5/HuggingFace/blob/main/NLPCourse/Chapter1.ipynb)
