@@ -28,15 +28,15 @@ sidebar:
 
 pipeline 라이브러리로 수행가능한 작업은 다음과 같다.
 
-1. feature-extraction
-2. fill-mask
-3. ner
-4. question-answering
-5. sentiment-analysis
-6. summarization
-7. text-generation
-8. translation
-9. zero-shot-classification
+1. feature-extraction : 특징 추출
+2. fill-mask : 빈칸 채우기
+3. ner : 개체명 인식
+4. question-answering : 질의응답
+5. sentiment-analysis : 감정분석
+6. summarization : 요약
+7. text-generation : 텍스트 생성
+8. translation : 번역
+9. zero-shot-classification : 제로샷 분류
 
 
 
@@ -65,7 +65,7 @@ pipeline 라이브러리로 수행가능한 작업은 다음과 같다.
 
 * 대규모 모델
 
-  트랜스포머는 대규모 모델로 사전학습된 모델을 공유하지 않고 각 조직이 개별적으로 모델을 사전학습한다면 환경적인 문제가 발생할 것이다.
+  트랜스포머는 대규모 모델로 사전학습된 모델을 공유하지 않고 각 조직이 개별적으로 모델을 사전학습한다면 환경적인 문제(온실가스 배출)가 발생할 것이다.
 
 * 전이학습
 
@@ -84,6 +84,6 @@ pipeline 라이브러리로 수행가능한 작업은 다음과 같다.
 
 # 인코더 vs 디코더
 
-* 인코더 : 입력에 대한 이해를 요구하는 작업에 적합(문장 분류, 개체명 인식, 단어분류)
-* 디코더 : 출력 생성에 적합(텍스트 생성)
-* 인코더-디코더(or seq2seq) : 번역, 요약과 같이 입력에 대한 이해와 출력 모두를 수행해야 하는 작업에 적합함
+* 인코더 : **입력에 대한 이해**를 요구하는 작업에 적합(문장 분류, 개체명 인식, 단어분류)
+* 디코더 : **출력 생성**에 적합(텍스트 생성)
+* 인코더-디코더(or seq2seq) : 번역, 요약과 같이 **입력에 대한 이해**와 **출력** 모두를 수행해야 하는 작업에 적합함
