@@ -111,6 +111,8 @@ $$
 
 * Q, K, V 행렬 얻기
 
+  ![img](https://wikidocs.net/images/page/31379/transformer11.PNG)
+
   ![image-20240301170847028](/images/2024-02-25-transformer/image-20240301170847028.png)
 
   우선 소스 문장의 단어들을 행렬로 만들어 병렬연산을 한다. 소스 단어의 행렬을 각각 세개의 다른 학습한 가중치들로 이루어진 행렬을 곱해 Q, K, V벡터로 변환을 한다(차원 줄이기).
