@@ -21,4 +21,3 @@ sidebar:
 * --peft : peft(Parameter Efficient Fine Tuning) 사용
 * --quantization : 가중치와 활성화를 int8과 같은 낮은 정밀도의 데이터 타입을 사용함으로써 계산, 메모리 비용을 줄이는 기법이다. ["int4", "int8", "None"]
 * --trainer : 사용할 trainer 타입(sft(Supervised Fine Tuning))
-* 
