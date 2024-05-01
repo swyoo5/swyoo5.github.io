@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "10/19 딥러닝 활성화 함수, 손실 함수"
-categories: [Programming, python, 자연어, AI, NLP, math]
-tag: [Programming, python, 자연어, AI, NLP, math]
+categories: [Programming, python, AI, NLP, math]
+tag: [Programming, python, AI, NLP, math]
 toc: true
 author_profile: false
 sidebar:

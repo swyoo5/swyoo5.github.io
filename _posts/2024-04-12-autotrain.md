@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "4/12 HuggingFace AutoTrain 파라미터 정리"
-categories: [Programming, huggingface, autotrain]
-tag: [Programming, huggingface, autotrain]
+categories: [Programming, huggingface, autotrain, NLP]
+tag: [Programming, huggingface, autotrain, NLP]
 toc: true
 author_profile: false
 sidebar:

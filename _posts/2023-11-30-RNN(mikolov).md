@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "11/30 [논문리뷰] Recurrent neural network based language model"
+title:  "11/30 [논문번역] Recurrent neural network based language model"
 categories: [Programming, python, 논문, RNN]
 tag: [Programming, python, 논문, RNN]
 toc: true
@@ -8,8 +8,6 @@ author_profile: false
 sidebar:
     nav: "docs"
 ---
-
- 이 포스팅은 해당 논문을 해석하고 리뷰하는 포스팅입니다.
 
 
 

@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "11/9 Tensorflow 함수"
-categories: [Programming, python, with]
-tag: [Programming, python, with]
+categories: [Programming, python, with, tensorflow]
+tag: [Programming, python, tensorflow]
 toc: true
 author_profile: false
 sidebar:

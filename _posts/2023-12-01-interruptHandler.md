@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "12/1 OS 용어"
-categories: [Programming, python, OS, 끄적끄적]
-tag: [Programming, python, OS, 끄적끄적]
+categories: [Programming, python, OS]
+tag: [Programming, python, OS]
 toc: true
 author_profile: false
 sidebar:

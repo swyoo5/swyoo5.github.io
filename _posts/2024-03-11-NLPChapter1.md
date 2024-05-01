@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "3/11 HuggingFace-NLP 1. Transformer Models"
-categories: [Programming, transformer, nlp]
-tag: [Programming, transformer, nlp]
+categories: [Programming, transformer, NLP]
+tag: [Programming, transformer, NLP]
 toc: true
 author_profile: false
 sidebar:

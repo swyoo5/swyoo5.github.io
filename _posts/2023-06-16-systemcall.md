@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "5/13 운영체제"
-categories: [OS, 끄적끄적]
+categories: [OS]
 tag: OS
 toc: true
 author_profile: false
