@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "2/25 Transformer"
-categories: [Programming, transformer, NLP]
+categories: [Programming, transformer, NLP, 논문]
 tag: [Programming, transformer, NLP]
 toc: true
 author_profile: false
@@ -9,11 +9,11 @@ sidebar:
     nav: "docs"
 ---
 
-# Transformer
+# Transformer 
 
 ## 기존 seq2seq과 비교
 
-트랜스포머는 기존의 seq2seq 모델과 같이 인코더-디코더의 형태를 유지하고 있다. 기존의 seq2seq 모델은 인코더와 디코더에서 총 t개의 recurrent network가 들어가 있었다. 그리고 시계열 데이터를 순차적으로 입력받다보니 **병렬화가 불가능**하여 데이터가 커지면 학습시간이 길어지며 **장기의존성 문제**로 **기울기 소실**이 발생해 멀리 떨어진 항목들간의 연관성은 학습을 하기가 힘들었다. 반면, 이러한 한계를 보완한 트랜스포머는 인코더와 디코더가 N개의 레이어로 구성되어 구조이다. 트랜스포머를 제안한 논문 "Attention is all you need"에서는 레이어를 6개로 사용한다.
+ 트랜스포머는 기존의 seq2seq 모델과 같이 인코더-디코더의 형태를 유지하고 있다.. 기존의 seq2seq 모델은 인코더와 디코더에서 총 t개의 recurrent network가 들어가 있었다. 그리고 시계열 데이터를 순차적으로 입력받다보니 **병렬화가 불가능**하여 데이터가 커지면 학습시간이 길어지며 **장기의존성 문제**로 **기울기 소실**이 발생해 멀리 떨어진 항목들간의 연관성은 학습을 하기가 힘들었다. 반면, 이러한 한계를 보완한 트랜스포머는 인코더와 디코더가 N개의 레이어로 구성되어 구조이다. 트랜스포머를 제안한 논문 "Attention is all you need"에서는 레이어를 6개로 사용한다.
 
 
 

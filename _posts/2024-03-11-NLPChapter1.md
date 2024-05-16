@@ -9,7 +9,7 @@ sidebar:
     nav: "docs"
 ---
 
- 카카오톡 오픈채팅으로 들어간 NLP 스터디에서 [HuggingFace NLP Course](https://huggingface.co/learn/nlp-course/chapter0/1?fw=pt)([NLP Course 번역ver.](https://wikidocs.net/book/8056))로 스터디를 진행하기로 했다. 중요한 이론적 내용을 포스팅하고 코드 부분은 깃허브로 따로 첨부하려고 한다.
+ 카카오톡 오픈채팅으로 들어간 NLP 스터디에서 [HuggingFace NLP Course](https://huggingface.co/learn/nlp-course/chapter0/1?fw=pt)([NLP Course 번역ver.](https://wikidocs.net/book/8056))로 스터디를 진행하기로 했다. 중요한 이론적 내용을 포스팅하고 코드 부분은 깃허브로 따로 첨부하려고 한다.  .
 
 
 

@@ -9,7 +9,7 @@ sidebar:
     nav: "docs"
 ---
 
-* tf.reduce_mean()
+* tf.reduce_mean() .
 
   ```python
   import tensorflow as tf

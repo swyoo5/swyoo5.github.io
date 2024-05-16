@@ -9,13 +9,13 @@ sidebar:
     nav: "docs"
 ---
 
-
+ 
 
 # Recurrent neural network based language model(Tomas mikolov)
 
 # Abstract
 
-음성인식에 적용되는 새로운 RNNLM이 제시됐다. 결과는 몇개의 RNNLM들을 혼합해서 사용하면, 최신의 backoff language model과 비교했을 때, 50%정도의 perplexity 감소를 얻을 수 있음을 가리킨다. 음성인식 실험에서 같은 양의 데이터로 학습된 다른 모델과 비교했을 때, Wall Street Journal task에서 18% 정도의 단어 오류율 감소를 보여준다.  그리고 backoff model이 RNNLM보다 훨씬 많은 양의 데이터로 훈련됐음에도, RNNLM이 더 어려운 NIST RT05 task 에서도 5% 감소한 것으로 나타났다. 우리는 connectionist language model들이 표준적인 n-gram 기술들보다 계산적 복잡성을 제외하고 뛰어나다는 것을 보이기 위해 충분한 경험적 증거들을 제시한다.
+음성인식에 적용되는 새로운 RNNLM이 제시됐다. 결과는 몇개의 RNNLM들을 혼합해서 사용하면, 최신의 backoff language model과 비교했을 때, 50%정도의 perplexity 감소를 얻을 수 있음을 가리킨다. 음성인식 실험에서 같은 양의 데이터로 학습된 다른 모델과 비교했을 때, Wall Street Journal task에서 18% 정도의 단어 오류율 감소를 보여준다.  그리고 backoff model이 RNNLM보다 훨씬 많은 양의 데이터로 훈련됐음에도, RNNLM이 더 어려운 NIST RT05 task 에서도 5% 감소한 것으로 나타났다. 우리는 connectionist language model들이 표준적인 n-gram 기술들보다 계산적 복잡성을 제외하고 뛰어나다는 것을 보이기 위해 충분한 경험적 증거들을 제시한다..
 
 
 

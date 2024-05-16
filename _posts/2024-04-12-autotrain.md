@@ -9,7 +9,7 @@ sidebar:
     nav: "docs"
 ---
 
- AI hub에서 다운로드 받은 [한국어-영어 번역 말뭉치](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=126)를 기반으로 한국어를 영어로 번역하는 task를 수행하도록 파인튜닝하는 도중에 허깅페이스의 autotrain의 파라미터들이 많아서 정리하려고 한다. 허깅페이스에서 제공하는 설명은 [깃허브](https://github.com/huggingface/autotrain-advanced/blob/main/src/autotrain/cli/run_llm.py#L17)에 올라와있다.
+ AI hub에서 다운로드 받은 [한국어-영어 번역 말뭉치](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=126)를 기반으로 한국어를 영어로 번역하는 task를 수행하도록 파인튜닝하는 도중에 허깅페이스의 autotrain의 파라미터들이 많아서 정리하려고 한다. 허깅페이스에서 제공하는 설명은 [깃허브](https://github.com/huggingface/autotrain-advanced/blob/main/src/autotrain/cli/run_llm.py#L17)에 올라와있다. .
 
 # autotrain 
 

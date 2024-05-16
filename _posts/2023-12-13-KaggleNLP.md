@@ -9,7 +9,7 @@ sidebar:
     nav: "docs"
 ---
 
-NLP 관련 도서로 이론 공부를 하다가 프로젝트로 어떻게 넘어가야하는지 고민하는 중에 많이들 Kaggle 사이트로 감을 잡는게 좋다고 해서 사이트를 보는데 Learn 카테고리에서 Natural Language Processing Guide 코스가 있는걸 보고 하나씩 해보려고 한다.
+NLP 관련 도서로 이론 공부를 하다가 프로젝트로 어떻게 넘어가야하는지 고민하는 중에 많이들 Kaggle 사이트로 감을 잡는게 좋다고 해서 사이트를 보는데 Learn 카테고리에서 Natural Language Processing Guide 코스가 있는걸 보고 하나씩 해보려고 한다. .
 
 [NLP Guide](https://www.kaggle.com/learn-guide/natural-language-processing)
 
